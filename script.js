@@ -11,7 +11,7 @@ const translations = {
         btn_touch: "Get In Touch",
         btn_download: "<i class='fas fa-download'></i> Download CV",
         section_internships: "Internships",
-        
+
         // Internship 1
         role_1: "Final Year Internship – TalentExpo",
         desc_1_1: "Requirements gathering and system architecture design",
@@ -109,7 +109,38 @@ const translations = {
 
 document.addEventListener('DOMContentLoaded', () => {
     const langBtn = document.querySelector('.lang-btn');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
     let currentLang = 'en'; // Default language
+
+    // Mobile Menu Toggle
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+
+            // Optional: Toggle icon between bars and times (X)
+            const icon = menuToggle.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            if (menuToggle) {
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    });
 
     langBtn.addEventListener('click', () => {
         currentLang = currentLang === 'en' ? 'fr' : 'en';
@@ -118,25 +149,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateLanguage(lang) {
         const elements = document.querySelectorAll('[data-i18n]');
-        
+
         elements.forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (translations[lang] && translations[lang][key]) {
                 // Handle button with HTML content (icon)
                 if (element.tagName === 'BUTTON' || (element.tagName === 'A' && element.classList.contains('btn'))) {
-                     element.innerHTML = translations[lang][key];
+                    element.innerHTML = translations[lang][key];
                 } else {
                     element.textContent = translations[lang][key];
                 }
             }
         });
-        
+
         // Update button text to show the *other* language option
         // Actually, let's make the button show the SWITCH TO language or current?
         // Usually buttons show what you will switch TO.
         // If current is EN, button should say "FR".
         // If current is FR, button should say "EN".
-        
+
         if (lang === 'en') {
             langBtn.innerHTML = '<i class="fas fa-globe"></i> FR';
         } else {

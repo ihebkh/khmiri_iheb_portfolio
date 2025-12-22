@@ -58,6 +58,15 @@ ul {
     align-items: center;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
 .logo {
     font-weight: 700;
     font-size: 1.5rem;
@@ -406,7 +415,7 @@ ul {
 /* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
@@ -705,5 +714,47 @@ ul {
 
     .edu-meta {
         justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        order: 1;
+        /* Keep it on the right or left? visual preference. Let's keep normally but maybe adjust order if needed. */
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: var(--shadow-md);
+        gap: 20px;
+        z-index: 1001;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .lang-btn {
+        margin-left: auto;
+        /* Push to right if needed, or keeping it near menu */
+        margin-right: 15px;
+        /* Spacing from menu toggle */
+    }
+
+    .hero .name {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
     }
 }
