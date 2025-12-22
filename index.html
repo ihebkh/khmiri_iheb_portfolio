@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khmiri Iheb - Junior Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <nav class="nav-links">
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#internships" data-i18n="nav_experience">Experience</a>
+                <a href="#skills" data-i18n="nav_skills">Skills</a>
+                <a href="#education" data-i18n="nav_education">Education</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </nav>
+            <button class="lang-btn"><i class="fas fa-globe"></i> FR</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <div class="container hero-container">
+            <div class="profile-img-wrapper">
+                <img src="C:\Users\khmir\Desktop\cv\1762006688660.png" alt="Khmiri Iheb" class="profile-img">
+            </div>
+            <p class="greeting" data-i18n="greeting">Hi, I'm</p>
+            <h1 class="name">Iheb Khmiri</h1>
+            <h2 class="title" data-i18n="title">Junior Software Engineer</h2>
+            <p class="bio" data-i18n="bio">
+                Passionate Software Engineer specialized in designing, building, and optimizing data pipelines and
+                scalable software systems using modern technologies.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary" data-i18n="btn_touch">Get In Touch</a>
+                <a href="C:\Users\khmir\Desktop\cv\khmiri_iheb_cv.pdf" class="btn btn-outline"
+                    data-i18n="btn_download"><i class="fas fa-download"></i> Download
+                    CV</a>
+            </div>
+
+            <div class="contact-info-bar">
+                <span><i class="far fa-envelope"></i> khmiriiheb3@gmail.com</span>
+                <span><i class="fas fa-phone-alt"></i> +216 50 201 529</span>
+                <span><i class="fas fa-map-marker-alt"></i> Tunis, Tunisia</span>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/khmiri-iheb-6855aa165/" class="social-icon"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ihebkh" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Internships -->
+    <section id="internships" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="section_internships">Internships</h2>
+
+            <div class="internships-grid">
+                <!-- Internship 1 -->
+                <div class="card internship-card">
+                    <h3 class="card-company">DigitalCook Tunisia</h3>
+                    <h4 class="card-role" data-i18n="role_1">Final Year Internship – TalentExpo</h4>
+                    <div class="card-meta">
+                        <span><i class="far fa-calendar-alt"></i> Feb 2025 – Sept 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Manar 1, Tunisia</span>
+                    </div>
+                    <ul class="card-list">
+                        <li data-i18n="desc_1_1">Requirements gathering and system architecture design</li>
+                        <li data-i18n="desc_1_2">Development of data integration and ETL processes</li>
+                        <li data-i18n="desc_1_3">Design and testing of interactive dashboards</li>
+                        <li data-i18n="desc_1_4">Implementation of an intelligent system to extract key information from
+                            CVs and
+                            automatically recommend relevant job offers</li>
+                        <li data-i18n="desc_1_5">Evaluation and auditing of results, followed by deployment of
+                            dashboards on a web platform
+                        </li>
+
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Airflow</span>
+                        <span>Docker</span>
+                        <span>Postgres</span>
+                        <span>MongoDB</span>
+                        <span>Microsoft Power BI</span>
+                        <span>React.js</span>
+                        <span>FastApi</span>
+                        <span>OCR</span>
+                        <span>NLP</span>
+                        <span>CRISPM-DM</span>
+                        <span>Scrum</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Internship 2 -->
+                <div class="card internship-card">
+                    <h3 class="card-company">Swiss premium Negoce SA</h3>
+                    <h4 class="card-role" data-i18n="role_2">Engineering Internship - Luxury car data analysis</h4>
+                    <div class="card-meta">
+                        <span><i class="far fa-calendar-alt"></i> Jun 2024 – Aug 2024</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Lac 2, Tunis</span>
+                    </div>
+                    <ul class="card-list">
+                        <li data-i18n="desc_2_1">Business requirements analysis and system component design</li>
+                        <li data-i18n="desc_2_2">Development of data integration and ETL workflows</li>
+                        <li data-i18n="desc_2_3">Design and validation of dashboards</li>
+                        <li data-i18n="desc_2_4">Integration of Machine Learning algorithms</li>
+                        <li data-i18n="desc_2_5">Evaluation and auditing of results, followed by deployment of
+                            dashboards on a web platform
+                        </li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>SSIS</span>
+                        <span>Docker</span>
+                        <span>SSAS</span>
+                        <span>SSMS</span>
+                        <span>Microsoft Power BI</span>
+                        <span>Next.js</span>
+                        <span>FastApi</span>
+                        <span>Scrum</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+
+
+                <!-- Internship 3 -->
+                <div class="card internship-card">
+                    <h3 class="card-company">Swiss premium Negoce SA - ESPRIT</h3>
+                    <h4 class="card-role" data-i18n="role_3">Work-study contract - Luxury car data analysis</h4>
+                    <div class="card-meta">
+                        <span><i class="far fa-calendar-alt"></i> Jul 2022 – Sep 2022</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Ghazela, Tunis</span>
+                    </div>
+                    <ul class="card-list">
+                        <li data-i18n="desc_3_1">Data collection and exploration through web scraping</li>
+                        <li data-i18n="desc_3_2">Development of data integration and ETL processes</li>
+                        <li data-i18n="desc_3_3">Design and testing of dashboards</li>
+                        <li data-i18n="desc_3_4">Integration of Machine Learning algorithms</li>
+                        <li data-i18n="desc_3_5">Evaluation and auditing of results, followed by deployment of
+                            dashboards on a web platform
+                        </li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>EDA</span>
+                        <span>Microsoft Power BI</span>
+                        <span>Talend</span>
+                        <span>GIMSI</span>
+                        <span>Django</span>
+                        <span>Angular</span>
+                        <span>Mysql</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- Technical Skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="section_skills">Technical Skills</h2>
+
+                <div class="skills-grid">
+
+                    <!-- Databases -->
+                    <div class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h3 class="skill-title" data-i18n="cat_db">Databases</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Oracle</span>
+                            <span>MySQL</span>
+                            <span>SQL Server (SSMS)</span>
+                            <span>PostgreSQL</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+
+                    <!-- Web Frameworks -->
+                    <div class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                            <h3 class="skill-title" data-i18n="cat_web">Web Frameworks</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Symfony</span>
+                            <span>Spring Boot</span>
+                            <span>.NET</span>
+                            <span>Django</span>
+                            <span>FastAPI</span>
+                            <span>React.js</span>
+                            <span>Next.js</span>
+                            <span>Angular</span>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Testing -->
+                    <div class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                            <h3 class="skill-title" data-i18n="cat_devops">DevOps & Testing</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Docker</span>
+                            <span>Jenkins</span>
+                            <span>JUnit</span>
+                            <span>Mockito</span>
+                            <span>Grafana</span>
+                            <span>Nexus</span>
+                            <span>Prometheus</span>
+                            <span>SonarQube</span>
+                        </div>
+                    </div>
+
+                    <!-- Data & BI -->
+                    <div class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3 class="skill-title" data-i18n="cat_data">Data & BI</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Microsoft Power BI</span>
+                            <span>Talend</span>
+                            <span>SSIS</span>
+                            <span>SSAS</span>
+                            <span>Airflow</span>
+                            <span>Kafka</span>
+                        </div>
+                    </div>
+
+                    <!-- AI & Machine Learning -->
+                    <div class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            <h3 class="skill-title" data-i18n="cat_ai">AI & Machine Learning</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Machine Learning</span>
+                            <span>NLP</span>
+                            <span>Big Data</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Additional Info Grid -->
+        <section id="additional-info" class="section">
+            <div class="container">
+                <div class="info-grid">
+
+                    <!-- Languages -->
+                    <div class="card info-card">
+                        <h3 class="card-title-small">Languages</h3>
+                        <div class="languages-list">
+                            <div class="language-item">
+                                <span class="lang-name">Arabic</span>
+                                <span class="lang-level">Native</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="lang-name">French</span>
+                                <span class="lang-level">Fluent</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="lang-name">English</span>
+                                <span class="lang-level">Professional proficiency</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interests -->
+                    <div class="card info-card">
+                        <h3 class="card-title-small">Interests</h3>
+                        <ul class="card-list simple-list">
+                            <li>Open Source Projects</li>
+                            <li>Reading Tech Blogs & AI</li>
+                            <li>Traveling</li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="section_education">Education</h2>
+                <div class="education-card">
+                    <div class="edu-icon-box">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3 class="edu-school">ESPRIT</h3>
+                        <p class="edu-desc" data-i18n="edu_desc">Private Higher School of Engineering and Technology</p>
+                        <h4 class="edu-degree" data-i18n="edu_degree">Engineering Degree in Computer Science</h4>
+                        <div class="edu-meta">
+                            <span><i class="far fa-calendar-alt"></i> 2020 – 2025</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Tunis, Tunisia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get In Touch -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title text-white">Get In Touch</h2>
+                <p class="contact-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities
+                    to be part of your vision.</p>
+
+                <div class="contact-grid">
+                    <!-- Left Column: Personal Info -->
+                    <div class="contact-col">
+                        <h3 class="contact-col-title">Iheb Khmiri</h3>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:khmiriiheb@gmail.com" class="contact-value">khmiriiheb3@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+216 50 201 529</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Tunisia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Socials -->
+                    <div class="contact-col">
+                        <h3 class="contact-col-title">Connect With Me</h3>
+
+                        <a href="https://www.linkedin.com/in/khmiri-iheb-6855aa165/" target="_blank"
+                            class="contact-card clickable">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">Iheb Khmiri</span>
+                            </div>
+                            <div class="contact-arrow">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/21650201529" target="_blank" class="contact-card clickable">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">WhatsApp</span>
+                                <span class="contact-value">+216 50 201 529</span>
+                            </div>
+                            <div class="contact-arrow">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Iheb Khmiri. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
