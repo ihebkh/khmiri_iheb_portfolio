@@ -12,29 +12,45 @@ const translations = {
         btn_download: "<i class='fas fa-download'></i> Download CV",
         section_internships: "Internships",
 
-        // Internship 1
-        role_1: "Final Year Internship – TalentExpo",
-        desc_1_1: "Requirements gathering and system architecture design",
-        desc_1_2: "Development of data integration and ETL processes",
-        desc_1_3: "Design and testing of interactive dashboards",
-        desc_1_4: "Implementation of an intelligent system to extract key information from CVs and automatically recommend relevant job offers",
-        desc_1_5: "Evaluation and auditing of results, followed by deployment of dashboards on a web platform",
+        // Web Developer Freelance - karhabti.tn
+        role_0: "Web Developer – Freelance",
+        desc_0_1: "Development of a responsive web application for managing automotive inventory and supplier networks",
+        desc_0_2: "Implementation of microservices architecture with Spring Boot for order processing and logistics tracking",
+        desc_0_3: "Creation of dynamic Angular dashboards for real-time vehicle parts availability and pricing management",
+        desc_0_4: "Integration of secure payment gateways and multi-vendor support with role-based permissions",
+        desc_0_5: "Optimization of database queries, API performance tuning, and deployment on cloud infrastructure",
 
-        // Internship 2
-        role_2: "Engineering Internship - Luxury car data analysis",
+        // Web Developer Freelance - Zooraga
+        role_1: "Web Developer – Freelance",
+        desc_1_1: "Design and development of an online e-commerce platform for selling automotive spare parts",
+        desc_1_2: "Backend development using Spring Boot with RESTful APIs for products, orders, users, and authentication",
+        desc_1_3: "Frontend development with Angular, implementing responsive UI components and dynamic data binding",
+        desc_1_4: "Implementation of secure user authentication, role-based access, and shopping cart management",
+        desc_1_5: "Integration of database persistence, testing, deployment, and maintenance of the web application",
+
+        // DigitalCook - Internship
+        role_2: "Final Year Internship – TalentExpo",
+        desc_2_1: "Requirements gathering and system architecture design",
+        desc_2_2: "Development of data integration and ETL processes",
+        desc_2_3: "Design and testing of interactive dashboards",
+        desc_2_4: "Implementation of an intelligent system to extract key information from CVs and automatically recommend relevant job offers",
+        desc_2_5: "Evaluation and auditing of results, followed by deployment of dashboards on a web platform",
+
+        // Internship 3
+        role_3: "Engineering Internship - Luxury car data analysis",
         desc_2_1: "Business requirements analysis and system component design",
         desc_2_2: "Development of data integration and ETL workflows",
         desc_2_3: "Design and validation of dashboards",
         desc_2_4: "Integration of Machine Learning algorithms",
-        desc_2_5: "Evaluation and auditing of results, followed by deployment of dashboards on a web platform",
-
-        // Internship 3
-        role_3: "Work-study contract - Luxury car data analysis",
-        desc_3_1: "Data collection and exploration through web scraping",
-        desc_3_2: "Development of data integration and ETL processes",
-        desc_3_3: "Design and testing of dashboards",
-        desc_3_4: "Integration of Machine Learning algorithms",
         desc_3_5: "Evaluation and auditing of results, followed by deployment of dashboards on a web platform",
+
+        // Internship 4
+        role_4: "Work-study contract - Luxury car data analysis",
+        desc_4_1: "Data collection and exploration through web scraping",
+        desc_4_2: "Development of data integration and ETL processes",
+        desc_4_3: "Design and testing of dashboards",
+        desc_4_4: "Integration of Machine Learning algorithms",
+        desc_4_5: "Evaluation and auditing of results, followed by deployment of dashboards on a web platform",
 
         section_skills: "Technical Skills",
         cat_db: "Databases",
@@ -65,29 +81,45 @@ const translations = {
         btn_download: "<i class='fas fa-download'></i> Télécharger CV",
         section_internships: "Stages",
 
-        // Internship 1
-        role_1: "Stage de Fin d'Études – TalentExpo",
-        desc_1_1: "Recueil des besoins et conception de l'architecture système",
-        desc_1_2: "Développement des processus d'intégration de données et ETL",
-        desc_1_3: "Conception et test de tableaux de bord interactifs",
-        desc_1_4: "Mise en œuvre d'un système intelligent pour extraire les informations clés des CV et recommander automatiquement des offres d'emploi pertinentes",
-        desc_1_5: "Évaluation et audit des résultats, suivis du déploiement des tableaux de bord sur une plateforme web",
+        // Web Developer Freelance - karhabti.tn
+        role_0: "Développeur Web – Freelance",
+        desc_0_1: "Développement d'une application web réactive pour la gestion des inventaires automobiles et des réseaux de fournisseurs",
+        desc_0_2: "Implémentation d'une architecture microservices avec Spring Boot pour le traitement des commandes et le suivi logistique",
+        desc_0_3: "Création de tableaux de bord Angular dynamiques pour la gestion en temps réel de la disponibilité et de la tarification des pièces",
+        desc_0_4: "Intégration de passerelles de paiement sécurisées et support multi-vendeurs avec permissions basées sur les rôles",
+        desc_0_5: "Optimisation des requêtes de base de données, tuning des performances API et déploiement sur infrastructure cloud",
 
-        // Internship 2
-        role_2: "Stage Ingénieur - Analyse de données de voitures de luxe",
+        // Web Developer Freelance - Zooraga
+        role_1: "Développeur Web – Freelance",
+        desc_1_1: "Conception et développement d'une plateforme e-commerce en ligne pour la vente de pièces détachées automobiles",
+        desc_1_2: "Développement backend avec Spring Boot avec des APIs RESTful pour les produits, commandes, utilisateurs et authentification",
+        desc_1_3: "Développement frontend avec Angular, implémentation de composants d'interface réactifs et liaison de données dynamiques",
+        desc_1_4: "Implémentation de l'authentification utilisateur sécurisée, du contrôle d'accès basé sur les rôles et de la gestion du panier",
+        desc_1_5: "Intégration de la persistance des données, tests, déploiement et maintenance de l'application web",
+
+        // DigitalCook - Internship
+        role_2: "Stage de Fin d'Études – TalentExpo",
+        desc_2_1: "Recueil des besoins et conception de l'architecture système",
+        desc_2_2: "Développement des processus d'intégration de données et ETL",
+        desc_2_3: "Conception et test de tableaux de bord interactifs",
+        desc_2_4: "Mise en œuvre d'un système intelligent pour extraire les informations clés des CV et recommander automatiquement des offres d'emploi pertinentes",
+        desc_2_5: "Évaluation et audit des résultats, suivis du déploiement des tableaux de bord sur une plateforme web",
+
+        // Internship 3
+        role_3: "Stage Ingénieur - Analyse de données de voitures de luxe",
         desc_2_1: "Analyse des besoins métier et conception des composants système",
         desc_2_2: "Développement des flux d'intégration de données et ETL",
         desc_2_3: "Conception et validation des tableaux de bord",
         desc_2_4: "Intégration d'algorithmes de Machine Learning",
-        desc_2_5: "Évaluation et audit des résultats, suivis du déploiement des tableaux de bord sur une plateforme web",
-
-        // Internship 3
-        role_3: "Contrat d'alternance - Analyse de données de voitures de luxe",
-        desc_3_1: "Collecte et exploration de données via web scraping",
-        desc_3_2: "Développement des processus d'intégration de données et ETL",
-        desc_3_3: "Conception et test des tableaux de bord",
-        desc_3_4: "Intégration d'algorithmes de Machine Learning",
         desc_3_5: "Évaluation et audit des résultats, suivis du déploiement des tableaux de bord sur une plateforme web",
+
+        // Internship 4
+        role_4: "Contrat d'alternance - Analyse de données de voitures de luxe",
+        desc_4_1: "Collecte et exploration de données via web scraping",
+        desc_4_2: "Développement des processus d'intégration de données et ETL",
+        desc_4_3: "Conception et test des tableaux de bord",
+        desc_4_4: "Intégration d'algorithmes de Machine Learning",
+        desc_4_5: "Évaluation et audit des résultats, suivis du déploiement des tableaux de bord sur une plateforme web",
 
         section_skills: "Compétences Techniques",
         cat_db: "Bases de Données",
