@@ -76,51 +76,50 @@
         <div class="container">
             <h2 class="section-title" data-i18n="section_internships">Experiences</h2>
 
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Tous</button>
+                <button class="filter-btn" data-filter="freelance" data-i18n="filter_freelance">Freelance</button>
+                <button class="filter-btn" data-filter="stage" data-i18n="filter_stage">Stage</button>
+                <button class="filter-btn" data-filter="projet" data-i18n="filter_projet">Projet individuel</button>
+            </div>
+
             <div class="internships-grid">
 
-                <!-- Experinces 0 -->
-<div class="card internship-card">
-    <h3 class="card-company">karhabti.tn</h3>
-    <h4 class="card-role" data-i18n="role_0">Web Developer – Freelance</h4>
 
-    <div class="card-meta">
-        <span><i class="far fa-calendar-alt"></i> JAN 2026 – NOW</span>
-        <span><i class="fas fa-map-marker-alt"></i> Ben Arous, Tunisia</span>
-    </div>
+                <!-- Freelance 1 - Odoo -->
+                <div class="card internship-card" data-category="freelance">
+                    <h3 class="card-company" data-i18n="role_title_5">Développeur Odoo – Module RH & Paie</h3>
+                    <p class="card-client">
+                        <span data-i18n="label_clients">Clients</span> :<br>
+                        – Cabinet de Comptabilité<br>
+                        – Société Ideal
+                    </p>
+                    <h4 class="card-role" data-i18n="role_5">Freelance</h4>
+                    <div class="card-meta">
+                        <span><i class="far fa-calendar-alt"></i> OCT 2025 – MAI 2026</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Tunisie</span>
+                    </div>
+                    <ul class="card-list">
+                        <li data-i18n="desc_5_1">Développement d'un module RH personnalisé sous Odoo pour la gestion des employés, contrats et données administratives.</li>
+                        <li data-i18n="desc_5_2">Mise en place du suivi de présence : pointages, absences, retards, heures travaillées et heures supplémentaires.</li>
+                        <li data-i18n="desc_5_3">Implémentation du calcul de paie basé sur les présences, contrats, primes, retenues et règles salariales.</li>
+                        <li data-i18n="desc_5_4">Personnalisation des vues, menus et workflows Odoo, avec gestion des données via PostgreSQL.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Odoo</span>
+                        <span>Python</span>
+                        <span>XML</span>
+                        <span>PostgreSQL</span>
+                        <span>SQL</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
 
-    <ul class="card-list">
-        <li data-i18n="desc_0_1">
-            Development of a responsive web application for managing automotive inventory and supplier networks
-        </li>
-        <li data-i18n="desc_0_2">
-            Implementation of microservices architecture with Spring Boot for order processing and logistics tracking
-        </li>
-        <li data-i18n="desc_0_3">
-            Creation of dynamic Angular dashboards for real-time vehicle parts availability and pricing management
-        </li>
-        <li data-i18n="desc_0_4">
-            Integration of secure payment gateways and multi-vendor support with role-based permissions
-        </li>
-        <li data-i18n="desc_0_5">
-            Optimization of database queries, API performance tuning, and deployment on cloud infrastructure
-        </li>
-    </ul>
-
-    <div class="tech-stack">
-        <span>Spring Boot</span>
-        <span>Angular</span>
-        <span>MySQL</span>
-        <span>GitHub</span>
-        <span>Docker</span>
-        <span>VPS</span>
-        <span>DNS</span>
-    </div>
-</div>
-
-                <!-- Experinces 1 -->
-<div class="card internship-card">
-    <h3 class="card-company">Zorraga Tunisia</h3>
-    <h4 class="card-role" data-i18n="role_1">Web Developer – Freelance</h4>
+                <!-- Freelance 2 - Zorraga -->
+<div class="card internship-card" data-category="freelance">
+    <h3 class="card-company" data-i18n="role_title_1">Développeur Web</h3>
+    <p class="card-client"><span data-i18n="label_client">Client</span> :<br>– Zorraga Tunisia</p>
+    <h4 class="card-role" data-i18n="role_1">Freelance</h4>
 
     <div class="card-meta">
         <span><i class="far fa-calendar-alt"></i> OCT 2025 – JAN 2026</span>
@@ -156,26 +155,19 @@
     </div>
 </div>
 
-                <!-- Internship 1 -->
-                <div class="card internship-card">
+                <!-- Stage 1 - DigitalCook (Fév 2025 – Sept 2025) -->
+                <div class="card internship-card" data-category="stage" data-modal="digitalcook">
+                    <span class="card-click-hint">Voir détails</span>
+                    <img class="card-image" src="digitalcook.png" alt="DigitalCook Tunisia">
                     <h3 class="card-company">DigitalCook Tunisia</h3>
                     <h4 class="card-role" data-i18n="role_2">Final Year Internship – TalentExpo</h4>
                     <div class="card-meta">
                         <span><i class="far fa-calendar-alt"></i> Feb 2025 – Sept 2025</span>
                         <span><i class="fas fa-map-marker-alt"></i> Manar 1, Tunisia</span>
                     </div>
-                    <ul class="card-list">
-                        <li data-i18n="desc_2_1">Requirements gathering and system architecture design</li>
-                        <li data-i18n="desc_2_2">Development of data integration and ETL processes</li>
-                        <li data-i18n="desc_2_3">Design and testing of interactive dashboards</li>
-                        <li data-i18n="desc_2_4">Implementation of an intelligent system to extract key information from
-                            CVs and
-                            automatically recommend relevant job offers</li>
-                        <li data-i18n="desc_2_5">Evaluation and auditing of results, followed by deployment of
-                            dashboards on a web platform
-                        </li>
-
-                    </ul>
+                    <p class="card-desc" data-i18n="desc_2_short">
+                        Participation au développement de la plateforme intelligente TalentExpo intégrant des pipelines ETL, un système IA de matching CV/offres d'emploi et des tableaux de bord Power BI.
+                    </p>
                     <div class="tech-stack">
                         <span>Python</span>
                         <span>Airflow</span>
@@ -188,29 +180,22 @@
                         <span>OpenAI</span>
                         <span>OCR</span>
                         <span>NLP</span>
-                        <span>CRISPM-DM</span>
                         <span>Scrum</span>
                         <span>GitHub</span>
                     </div>
                 </div>
 
-                <!-- Internship 2 -->
-                <div class="card internship-card">
+                <!-- Stage 2 - Swiss Negoce (Juin 2024 – Août 2024) -->
+                <div class="card internship-card" data-category="stage" data-modal="spn">
+                    <span class="card-click-hint">Voir détails</span>
+                    <img class="card-image" src="SPN.png" alt="Swiss Premium Negoce SA">
                     <h3 class="card-company">Swiss premium Negoce SA</h3>
                     <h4 class="card-role" data-i18n="role_3">Engineering Internship - Luxury car data analysis</h4>
                     <div class="card-meta">
                         <span><i class="far fa-calendar-alt"></i> Jun 2024 – Aug 2024</span>
                         <span><i class="fas fa-map-marker-alt"></i> Lac 2, Tunis</span>
                     </div>
-                    <ul class="card-list">
-                        <li data-i18n="desc_3_1">Business requirements analysis and system component design</li>
-                        <li data-i18n="desc_3_2">Development of data integration and ETL workflows</li>
-                        <li data-i18n="desc_3_3">Design and validation of dashboards</li>
-                        <li data-i18n="desc_3_4">Integration of Machine Learning algorithms</li>
-                        <li data-i18n="desc_3_5">Evaluation and auditing of results, followed by deployment of
-                            dashboards on a web platform
-                        </li>
-                    </ul>
+                    <p class="card-desc" data-i18n="desc_3_short">Participation à l'analyse de données de voitures de luxe : conception ETL, intégration ML et déploiement de tableaux de bord décisionnels.</p>
                     <div class="tech-stack">
                         <span>Python</span>
                         <span>SSIS</span>
@@ -225,24 +210,37 @@
                     </div>
                 </div>
 
+                <!-- Stage 3 - Arma Consulting (Jan 2024 – Jul 2024) -->
+                <div class="card internship-card" data-category="stage" data-modal="arma">
+                    <span class="card-click-hint">Voir détails</span>
+                    <img class="card-image" src="ARMA.jpg" alt="Arma Consulting">
+                    <h3 class="card-company">Arma Consulting</h3>
+                    <h4 class="card-role" data-i18n="role_6">Ingénieur Data – Temps partiel</h4>
+                    <div class="card-meta">
+                        <span><i class="far fa-calendar-alt"></i> JAN 2024 – JUL 2024</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Tunisie</span>
+                    </div>
+                    <p class="card-desc" data-i18n="desc_6_short">Participation à temps partiel au développement de fonctionnalités RH/stocks sous Odoo, conception de pipelines ETL et création de tableaux de bord Power BI.</p>
+                    <div class="tech-stack">
+                        <span>Odoo</span>
+                        <span>Talend</span>
+                        <span>PostgreSQL</span>
+                        <span>Microsoft Power BI</span>
+                        <span>Python</span>
+                    </div>
+                </div>
 
-                <!-- Internship 3 -->
-                <div class="card internship-card">
+                <!-- Stage 4 - Swiss ESPRIT (Jan 2024 – Jun 2024) -->
+                <div class="card internship-card" data-category="stage" data-modal="spn_esprit">
+                    <span class="card-click-hint">Voir détails</span>
+                    <img class="card-image" src="SPN.png" alt="Swiss Premium Negoce SA - ESPRIT">
                     <h3 class="card-company">Swiss premium Negoce SA - ESPRIT</h3>
                     <h4 class="card-role" data-i18n="role_4">Work-study contract - Luxury car data analysis</h4>
                     <div class="card-meta">
-                        <span><i class="far fa-calendar-alt"></i> Jul 2022 – Sep 2022</span>
+                        <span><i class="far fa-calendar-alt"></i> Jan 2024 – Jun 2024</span>
                         <span><i class="fas fa-map-marker-alt"></i> Ghazela, Tunis</span>
                     </div>
-                    <ul class="card-list">
-                        <li data-i18n="desc_4_1">Data collection and exploration through web scraping</li>
-                        <li data-i18n="desc_4_2">Development of data integration and ETL processes</li>
-                        <li data-i18n="desc_4_3">Design and testing of dashboards</li>
-                        <li data-i18n="desc_4_4">Integration of Machine Learning algorithms</li>
-                        <li data-i18n="desc_4_5">Evaluation and auditing of results, followed by deployment of
-                            dashboards on a web platform
-                        </li>
-                    </ul>
+                    <p class="card-desc" data-i18n="desc_4_short">Contrat d'alternance dédié à la collecte de données par web scraping, développement de processus ETL et intégration d'algorithmes de Machine Learning.</p>
                     <div class="tech-stack">
                         <span>Python</span>
                         <span>EDA</span>
@@ -252,9 +250,56 @@
                         <span>Django</span>
                         <span>Angular</span>
                         <span>Mysql</span>
-
                     </div>
                 </div>
+
+                <!-- Projet individuel 1 - Coupe du Monde -->
+                <div class="card internship-card" data-category="projet">
+                    <h3 class="card-company" data-i18n="proj1_title">Analyse de données – Coupe du Monde FIFA</h3>
+                    <h4 class="card-role" data-i18n="proj1_role">Projet individuel</h4>
+                    <div class="card-meta">
+                        <span><i class="far fa-calendar-alt"></i> Juin 2026</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Personnel</span>
+                    </div>
+                    <ul class="card-list">
+                        <li data-i18n="proj1_desc1">Collecte et exploration des données historiques des Coupes du Monde (matchs, joueurs, équipes, statistiques).</li>
+                        <li data-i18n="proj1_desc2">Conception et développement d'un pipeline ETL pour le nettoyage, la transformation et l'intégration des données.</li>
+                        <li data-i18n="proj1_desc3">Création de tableaux de bord interactifs pour visualiser les performances des équipes et les tendances historiques.</li>
+                        <li data-i18n="proj1_desc4">Implémentation de modèles de Machine Learning pour la prédiction des résultats de matchs.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Prefect</span>
+                        <span>Microsoft Power BI</span>
+                        <span>PostgreSQL</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Projet individuel 2 - Supply Chain -->
+                <div class="card internship-card" data-category="projet">
+                    <h3 class="card-company" data-i18n="proj2_title">Analyse de données – Supply Chain</h3>
+                    <h4 class="card-role" data-i18n="proj2_role">Projet individuel</h4>
+                    <div class="card-meta">
+                        <span><i class="far fa-calendar-alt"></i> Mai 2026</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Personnel</span>
+                    </div>
+                    <ul class="card-list">
+                        <li data-i18n="proj2_desc1">Analyse et modélisation des données de chaîne d'approvisionnement : stocks, commandes, fournisseurs et délais de livraison.</li>
+                        <li data-i18n="proj2_desc2">Développement de flux ETL pour l'intégration et la centralisation des données multi-sources.</li>
+                        <li data-i18n="proj2_desc3">Conception de tableaux de bord KPI pour le suivi des performances opérationnelles et la détection des anomalies.</li>
+                        <li data-i18n="proj2_desc4">Application d'algorithmes de Machine Learning pour l'optimisation des stocks et la prévision de la demande.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Scikit-learn</span>
+                        <span>Microsoft Power BI</span>
+                        <span>PostgreSQL</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+
             </div>
         </div>
         </div>
@@ -495,6 +540,25 @@
                 </div>
             </div>
         </section>
+
+        <!-- Modal Popup -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal-box" id="modalBox">
+                <div class="modal-close">
+                    <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+                </div>
+                <div id="modalImageArea"></div>
+                <div class="modal-body">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-role" id="modalRole"></p>
+                    <div class="modal-meta" id="modalMeta"></div>
+                    <p class="modal-section-title" id="modalDescLabel"></p>
+                    <ul class="modal-list" id="modalList"></ul>
+                    <p class="modal-section-title" id="modalTechLabel"></p>
+                    <div class="modal-tech" id="modalTech"></div>
+                </div>
+            </div>
+        </div>
 
         <script src="script.js"></script>
 </body>
