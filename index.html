@@ -116,7 +116,9 @@
                 </div>
 
                 <!-- Freelance 2 - Zorraga -->
-<div class="card internship-card" data-category="freelance">
+<div class="card internship-card" data-category="freelance" data-modal="zorraga">
+    <span class="card-click-hint">Voir détails</span>
+    <img class="card-image" src="zorraga/zorragalogo.png" alt="Zorraga Tunisia">
     <h3 class="card-company" data-i18n="role_title_1">Développeur Web</h3>
     <p class="card-client"><span data-i18n="label_client">Client</span> :<br>– Zorraga Tunisia</p>
     <h4 class="card-role" data-i18n="role_1">Freelance</h4>
@@ -126,23 +128,7 @@
         <span><i class="fas fa-map-marker-alt"></i> Ben Arous, Tunisia</span>
     </div>
 
-    <ul class="card-list">
-        <li data-i18n="desc_1_1">
-            Design and development of an online e-commerce platform for selling automotive spare parts
-        </li>
-        <li data-i18n="desc_1_2">
-            Backend development using Spring Boot with RESTful APIs for products, orders, users, and authentication
-        </li>
-        <li data-i18n="desc_1_3">
-            Frontend development with Angular, implementing responsive UI components and dynamic data binding
-        </li>
-        <li data-i18n="desc_1_4">
-            Implementation of secure user authentication, role-based access, and shopping cart management
-        </li>
-        <li data-i18n="desc_1_5">
-            Integration of database persistence, testing, deployment, and maintenance of the web application
-        </li>
-    </ul>
+    <p class="card-desc" data-i18n="desc_1_short">Développement d'une plateforme e-commerce de vente de pièces automobiles avec Spring Boot, Angular et déploiement sur VPS.</p>
 
     <div class="tech-stack">
         <span>Spring Boot</span>
@@ -202,10 +188,10 @@
                         <span>Docker</span>
                         <span>SSAS</span>
                         <span>SSMS</span>
-                        <span>Microsoft Power BI</span>
                         <span>Next.js</span>
                         <span>FastApi</span>
-                        <span>Scrum</span>
+                        <span>Trello</span>
+                        <span>Slack</span>
                         <span>GitHub</span>
                     </div>
                 </div>
@@ -302,9 +288,29 @@
 
             </div>
         </div>
-        </div>
-        </div>
-        <!-- Technical Skills -->
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="section_education">Education</h2>
+                <div class="education-card">
+                    <div class="edu-icon-box">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3 class="edu-school">ESPRIT</h3>
+                        <p class="edu-desc" data-i18n="edu_desc">Private Higher School of Engineering and Technology</p>
+                        <h4 class="edu-degree" data-i18n="edu_degree">Engineering Degree in Computer Science</h4>
+                        <div class="edu-meta">
+                            <span><i class="far fa-calendar-alt"></i> 2020 – 2025</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Tunis, Tunisia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="skills" class="section">
             <div class="container">
                 <h2 class="section-title" data-i18n="section_skills">Technical Skills</h2>
@@ -395,6 +401,46 @@
             </div>
         </section>
 
+        <!-- Certifications -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="section_certifications">Formations & Certifications</h2>
+                <div class="certifications-grid">
+
+                    <!-- Power BI -->
+                    <div class="cert-card" onclick="openCertLightbox('certifications/1777020839737.jpg')">
+                        <div class="cert-image-wrap">
+                            <img src="certifications/1777020839737.jpg" alt="Microsoft Power BI Certification">
+                        </div>
+                        <div class="cert-body">
+                            <p class="cert-title" data-i18n="cert1_title">Microsoft Certified: Power BI Data Analyst Associate</p>
+                            <p class="cert-issuer">Microsoft</p>
+                            <div class="cert-meta">
+                                <span><i class="far fa-calendar-alt"></i> <span data-i18n="cert1_date">Obtenu le 24 Avril 2026</span></span>
+                                <span><i class="fas fa-clock"></i> <span data-i18n="cert1_exp">Expire le 25 Avril 2027</span></span>
+                            </div>
+                            <span class="cert-badge">✓ <span data-i18n="cert1_badge">Online Verifiable</span></span>
+                        </div>
+                    </div>
+
+                    <!-- DP-600 En cours -->
+                    <div class="cert-card">
+                        <div class="cert-image-wrap" style="display:flex;align-items:center;justify-content:center;background:#f0e8ea;">
+                            <i class="fas fa-certificate" style="font-size:5rem;color:var(--primary-color);"></i>
+                        </div>
+                        <div class="cert-body">
+                            <p class="cert-title" data-i18n="cert2_title">Microsoft Fabric Analytics Engineer (DP-600)</p>
+                            <p class="cert-issuer">Microsoft</p>
+                            <div class="cert-meta">
+                                <span><i class="fas fa-spinner"></i> <span data-i18n="cert2_status">En cours</span></span>
+                            </div>
+                            <span class="cert-badge" style="background:#fff3e0;color:#e65100;" data-i18n="cert2_badge">⏳ En cours</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
         <!-- Additional Info Grid -->
         <section id="additional-info" class="section">
@@ -403,56 +449,33 @@
 
                     <!-- Languages -->
                     <div class="card info-card">
-                        <h3 class="card-title-small">Languages</h3>
+                        <h3 class="card-title-small" data-i18n="section_languages">Languages</h3>
                         <div class="languages-list">
                             <div class="language-item">
-                                <span class="lang-name">Arabic</span>
-                                <span class="lang-level">Native</span>
+                                <span class="lang-name" data-i18n="lang_arabic">Arabic</span>
+                                <span class="lang-level" data-i18n="lang_native">Native</span>
                             </div>
                             <div class="language-item">
-                                <span class="lang-name">French</span>
-                                <span class="lang-level">Fluent</span>
+                                <span class="lang-name" data-i18n="lang_french">French</span>
+                                <span class="lang-level" data-i18n="lang_fluent">Fluent</span>
                             </div>
                             <div class="language-item">
-                                <span class="lang-name">English</span>
-                                <span class="lang-level">Professional proficiency</span>
+                                <span class="lang-name" data-i18n="lang_english">English</span>
+                                <span class="lang-level" data-i18n="lang_fluent">Fluent</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Interests -->
                     <div class="card info-card">
-                        <h3 class="card-title-small">Interests</h3>
+                        <h3 class="card-title-small" data-i18n="section_interests">Interests</h3>
                         <ul class="card-list simple-list">
-                            <li>Open Source Projects</li>
-                            <li>Reading Tech Blogs & AI</li>
-                            <li>Traveling</li>
+                            <li data-i18n="interest_1">Open Source Projects</li>
+                            <li data-i18n="interest_2">Reading Tech Blogs & AI</li>
+                            <li data-i18n="interest_3">Traveling</li>
                         </ul>
                     </div>
 
-
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Education -->
-        <section id="education" class="section">
-            <div class="container">
-                <h2 class="section-title" data-i18n="section_education">Education</h2>
-                <div class="education-card">
-                    <div class="edu-icon-box">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="edu-content">
-                        <h3 class="edu-school">ESPRIT</h3>
-                        <p class="edu-desc" data-i18n="edu_desc">Private Higher School of Engineering and Technology</p>
-                        <h4 class="edu-degree" data-i18n="edu_degree">Engineering Degree in Computer Science</h4>
-                        <div class="edu-meta">
-                            <span><i class="far fa-calendar-alt"></i> 2020 – 2025</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Tunis, Tunisia</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -540,6 +563,14 @@
                 </div>
             </div>
         </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox-overlay" id="lightboxOverlay">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#8249;</button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <button class="lightbox-nav lightbox-next" id="lightboxNext">&#8250;</button>
+        </div>
 
         <!-- Modal Popup -->
         <div class="modal-overlay" id="modalOverlay">

@@ -68,6 +68,7 @@ const translations = {
         desc_4_4: "Integration of Machine Learning algorithms",
         desc_4_5: "Evaluation and auditing of results, followed by deployment of dashboards on a web platform",
 
+        desc_1_short: "Development of an e-commerce platform for selling automotive spare parts with Spring Boot, Angular, and VPS deployment.",
         desc_2_short: "Participation in the development of TalentExpo, an intelligent recruitment platform integrating ETL pipelines, an AI-powered CV/job offer matching system, and Power BI dashboards.",
         desc_3_short: "Participation in luxury car data analysis: ETL design, ML integration, and deployment of decision-making dashboards.",
         desc_4_short: "Work-study contract focused on data collection via web scraping, ETL process development, and Machine Learning algorithm integration.",
@@ -89,6 +90,14 @@ const translations = {
         proj2_desc4: "Application of Machine Learning algorithms for inventory optimization and demand forecasting.",
 
         section_skills: "Technical Skills",
+        section_certifications: "Formations & Certifications",
+        cert1_title: "Microsoft Certified: Power BI Data Analyst Associate",
+        cert1_date: "Earned: April 24, 2026",
+        cert1_exp: "Expires: April 25, 2027",
+        cert1_badge: "Online Verifiable",
+        cert2_title: "Microsoft Fabric Analytics Engineer (DP-600)",
+        cert2_status: "In progress",
+        cert2_badge: "⏳ In Progress",
         cat_db: "Databases",
         cat_web: "Web Frameworks",
         cat_devops: "DevOps & Testing",
@@ -99,6 +108,16 @@ const translations = {
         edu_desc: "Private Higher School of Engineering and Technology",
         edu_degree: "Engineering Degree in Computer Science",
 
+        section_languages: "Languages",
+        lang_arabic: "Arabic",
+        lang_french: "French",
+        lang_english: "English",
+        lang_native: "Native",
+        lang_fluent: "Fluent",
+        section_interests: "Interests",
+        interest_1: "Open Source Projects",
+        interest_2: "Reading Tech Blogs & AI",
+        interest_3: "Traveling",
         section_contact: "Get In Touch",
         contact_subtitle: "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.",
         connect_title: "Connect With Me",
@@ -173,6 +192,7 @@ const translations = {
         desc_4_4: "Intégration d'algorithmes de Machine Learning",
         desc_4_5: "Évaluation et audit des résultats, suivis du déploiement des tableaux de bord sur une plateforme web",
 
+        desc_1_short: "Développement d'une plateforme e-commerce de vente de pièces automobiles avec Spring Boot, Angular et déploiement sur VPS.",
         desc_2_short: "Participation au développement de la plateforme intelligente TalentExpo intégrant des pipelines ETL, un système IA de matching CV/offres d'emploi et des tableaux de bord Power BI.",
         desc_3_short: "Participation à l'analyse de données de voitures de luxe : conception ETL, intégration ML et déploiement de tableaux de bord décisionnels.",
         desc_4_short: "Contrat d'alternance axé sur la collecte de données par web scraping, le développement de processus ETL et l'intégration d'algorithmes de Machine Learning.",
@@ -194,6 +214,14 @@ const translations = {
         proj2_desc4: "Application d'algorithmes de Machine Learning pour l'optimisation des stocks et la prévision de la demande.",
 
         section_skills: "Compétences Techniques",
+        section_certifications: "Formations & Certifications",
+        cert1_title: "Microsoft Certified : Power BI Data Analyst Associate",
+        cert1_date: "Obtenu le 24 Avril 2026",
+        cert1_exp: "Expire le 25 Avril 2027",
+        cert1_badge: "Vérifiable en ligne",
+        cert2_title: "Microsoft Fabric Analytics Engineer (DP-600)",
+        cert2_status: "En cours",
+        cert2_badge: "⏳ En cours",
         cat_db: "Bases de Données",
         cat_web: "Frameworks Web",
         cat_devops: "DevOps & Testing",
@@ -204,6 +232,16 @@ const translations = {
         edu_desc: "École Supérieure Privée d'Ingénierie et de Technologies",
         edu_degree: "Diplôme National d'Ingénieur en Informatique",
 
+        section_languages: "Langues",
+        lang_arabic: "Arabe",
+        lang_french: "Français",
+        lang_english: "Anglais",
+        lang_native: "Langue maternelle",
+        lang_fluent: "Courant",
+        section_interests: "Centres d'intérêt",
+        interest_1: "Projets Open Source",
+        interest_2: "Veille technologique & IA",
+        interest_3: "Voyages",
         section_contact: "Me Contacter",
         contact_subtitle: "Je suis toujours ouvert à la discussion de nouveaux projets, d'idées créatives ou d'opportunités de faire partie de votre vision.",
         connect_title: "Connectez-vous avec moi",
@@ -213,22 +251,72 @@ const translations = {
 
 // ── Modal data ──────────────────────────────────────────────
 const modalData = {
+    zorraga: {
+        en: {
+            title: "E-Commerce Platform – Automotive Spare Parts",
+            role: "Web Developer · Zorraga Tunisia · Freelance",
+            date: "Oct 2025 – Jan 2026",
+            location: "Ben Arous, Tunisia",
+            images: ["zorraga/produits.jpg", "zorraga/zorraga1.jpg", "zorraga/zorraga2.jpg"],
+            icon: "fas fa-shopping-cart",
+            descriptions: [
+                "<strong>Context:</strong> Full-stack freelance mission to build a professional e-commerce platform for Zorraga Tunisia, a company specializing in the sale and distribution of automotive spare parts.",
+                "<strong>Backend – Spring Boot:</strong> Design and implementation of a modular RESTful API architecture covering product catalog management, order processing, supplier management, and secure JWT-based authentication.",
+                "<strong>Frontend – Angular:</strong> Development of a dynamic and responsive SPA (Single Page Application) with reusable components, client-side routing, reactive forms, and real-time cart management.",
+                "<strong>Security & Roles:</strong> Implementation of role-based access control (Admin / Client / Supplier) with Spring Security, password encryption (BCrypt), and protected API endpoints.",
+                "<strong>Database & Performance:</strong> MySQL schema design with optimized relational models for products, categories, orders, and users. Query optimization and index tuning for high-volume catalog browsing.",
+                "<strong>Deployment:</strong> Full containerization with Docker, hosted on a dedicated VPS with Nginx reverse proxy, SSL certificate configuration, and custom domain DNS setup for production readiness.",
+            ],
+            tech: ["Spring Boot", "Angular", "MySQL", "Docker", "VPS", "Nginx", "DNS", "JWT", "GitHub"],
+            descLabel: "Project Details",
+            techLabel: "Technologies",
+        },
+        fr: {
+            title: "Plateforme E-Commerce – Pièces Automobiles",
+            role: "Développeur Web · Zorraga Tunisia · Freelance",
+            date: "Oct 2025 – Jan 2026",
+            location: "Ben Arous, Tunisie",
+            images: ["zorraga/produits.jpg", "zorraga/zorraga1.jpg", "zorraga/zorraga2.jpg"],
+            icon: "fas fa-shopping-cart",
+            descriptions: [
+                "<strong>Contexte :</strong> Mission freelance full-stack pour la création d'une plateforme e-commerce professionnelle pour Zorraga Tunisia, entreprise spécialisée dans la vente et distribution de pièces automobiles.",
+                "<strong>Backend – Spring Boot :</strong> Conception et implémentation d'une architecture API RESTful modulaire couvrant la gestion du catalogue produits, traitement des commandes, gestion des fournisseurs et authentification sécurisée JWT.",
+                "<strong>Frontend – Angular :</strong> Développement d'une SPA (Single Page Application) dynamique et responsive avec composants réutilisables, routing côté client, formulaires réactifs et gestion du panier en temps réel.",
+                "<strong>Sécurité & Rôles :</strong> Mise en place d'un contrôle d'accès basé sur les rôles (Admin / Client / Fournisseur) avec Spring Security, chiffrement des mots de passe (BCrypt) et endpoints API protégés.",
+                "<strong>Base de données & Performance :</strong> Schéma MySQL avec modèles relationnels optimisés pour les produits, catégories, commandes et utilisateurs. Optimisation des requêtes et indexation pour la navigation à haut volume.",
+                "<strong>Déploiement :</strong> Conteneurisation complète avec Docker, hébergé sur VPS dédié avec reverse proxy Nginx, configuration SSL et paramétrage DNS de domaine personnalisé pour la mise en production.",
+            ],
+            tech: ["Spring Boot", "Angular", "MySQL", "Docker", "VPS", "Nginx", "DNS", "JWT", "GitHub"],
+            descLabel: "Détails du Projet",
+            techLabel: "Technologies",
+        }
+    },
     spn: {
         en: {
             title: "Luxury Car Data Analysis",
             role: "Engineering Internship · Swiss Premium Negoce SA",
             date: "Jun 2024 – Aug 2024",
             location: "Lac 2, Tunis",
-            image: "SPN.png",
+            images: [
+                "spn-summer/pagehome.png",
+                "spn-summer/operations2.png",
+                "spn-summer/sales1.png",
+                "spn-summer/sales2.png",
+                "spn-summer/ml1.png",
+                "spn-summer/ml2.png",
+            ],
             icon: "fas fa-car",
             descriptions: [
-                "Business requirements analysis and design of the system architecture and its components.",
-                "Development of data integration and ETL workflows using SSIS for data extraction, transformation, and loading.",
-                "Design, development, and validation of interactive Power BI dashboards for luxury car market analysis.",
-                "Integration of Machine Learning algorithms for price prediction and trend detection.",
-                "Evaluation and auditing of results, followed by deployment of dashboards on a Next.js web platform.",
+                "<strong>Context:</strong> Engineering internship at Swiss Premium Negoce SA, a luxury automotive dealer. Mission: design and deploy a full Business Intelligence solution to support strategic decision-making.",
+                "<strong>ETL & Data Integration:</strong> Analysis of business requirements and design of the data architecture. Development of ETL workflows with SSIS for extracting, transforming, and loading data from multiple operational sources into a centralized data warehouse (SSAS).",
+                "<strong>Manager Dashboard:</strong> Executive view of global KPIs — total revenue, vehicle stock levels, team performance indicators, and month-over-month growth trends.",
+                "<strong>Operations Dashboard:</strong> Real-time monitoring of logistics flows, vehicle availability by model and location, order fulfillment rates, and operational bottleneck detection.",
+                "<strong>Marketing Dashboard:</strong> Campaign ROI tracking, lead conversion funnel analysis, customer segmentation by profile and purchase behavior, geographic distribution of prospects.",
+                "<strong>Sales Dashboard:</strong> Sales pipeline visualization by salesperson and region, revenue breakdown by car model and price range, target vs. actual performance with trend forecasting.",
+                "<strong>Machine Learning:</strong> Integration of predictive ML models for luxury car price estimation based on mileage, year, brand, and market trends.",
+                "<strong>Deployment:</strong> Dashboards published on a Next.js web platform with FastAPI backend, providing secure role-based access for management teams.",
             ],
-            tech: ["Python", "SSIS", "Docker", "SSAS", "SSMS", "Microsoft Power BI", "Next.js", "FastAPI", "Scrum", "GitHub"],
+            tech: ["Python", "SSIS", "SSAS", "SSMS", "Docker", "Next.js", "FastAPI", "Trello", "Slack", "GitHub"],
             descLabel: "Project Details",
             techLabel: "Technologies",
         },
@@ -237,16 +325,26 @@ const modalData = {
             role: "Stage Ingénieur · Swiss Premium Negoce SA",
             date: "Juin 2024 – Août 2024",
             location: "Lac 2, Tunis",
-            image: "SPN.png",
+            images: [
+                "spn-summer/pagehome.png",
+                "spn-summer/operations2.png",
+                "spn-summer/sales1.png",
+                "spn-summer/sales2.png",
+                "spn-summer/ml1.png",
+                "spn-summer/ml2.png",
+            ],
             icon: "fas fa-car",
             descriptions: [
-                "Analyse des besoins métier et conception de l'architecture système et de ses composants.",
-                "Développement de flux d'intégration de données et ETL avec SSIS pour l'extraction, la transformation et le chargement.",
-                "Conception, développement et validation de tableaux de bord Power BI interactifs pour l'analyse du marché automobile de luxe.",
-                "Intégration d'algorithmes de Machine Learning pour la prédiction de prix et la détection de tendances.",
-                "Évaluation et audit des résultats, suivis du déploiement des tableaux de bord sur une plateforme web Next.js.",
+                "<strong>Contexte :</strong> Stage ingénieur chez Swiss Premium Negoce SA, concessionnaire de voitures de luxe. Mission : concevoir et déployer une solution Business Intelligence complète pour soutenir la prise de décision stratégique.",
+                "<strong>ETL & Intégration des données :</strong> Analyse des besoins métier et conception de l'architecture de données. Développement de flux ETL avec SSIS pour l'extraction, la transformation et le chargement des données depuis plusieurs sources opérationnelles vers un entrepôt de données centralisé (SSAS).",
+                "<strong>Manager Dashboard :</strong> Vue exécutive des KPIs globaux — chiffre d'affaires total, niveaux de stock de véhicules, indicateurs de performance des équipes et tendances de croissance mois par mois.",
+                "<strong>Operations Dashboard :</strong> Suivi en temps réel des flux logistiques, disponibilité des véhicules par modèle et localisation, taux de traitement des commandes et détection des goulots d'étranglement opérationnels.",
+                "<strong>Marketing Dashboard :</strong> Suivi du ROI des campagnes, analyse du tunnel de conversion des leads, segmentation client par profil et comportement d'achat, distribution géographique des prospects.",
+                "<strong>Sales Dashboard :</strong> Visualisation du pipeline des ventes par commercial et région, décomposition du chiffre d'affaires par modèle et gamme de prix, performance réelle vs objectifs avec prévisions de tendances.",
+                "<strong>Machine Learning :</strong> Intégration de modèles ML prédictifs pour l'estimation des prix de voitures de luxe en fonction du kilométrage, de l'année, de la marque et des tendances du marché.",
+                "<strong>Déploiement :</strong> Tableaux de bord publiés sur une plateforme web Next.js avec backend FastAPI, offrant un accès sécurisé basé sur les rôles pour les équipes de direction.",
             ],
-            tech: ["Python", "SSIS", "Docker", "SSAS", "SSMS", "Microsoft Power BI", "Next.js", "FastAPI", "Scrum", "GitHub"],
+            tech: ["Python", "SSIS", "SSAS", "SSMS", "Docker", "Next.js", "FastAPI", "Trello", "Slack", "GitHub"],
             descLabel: "Détails du Projet",
             techLabel: "Technologies",
         }
@@ -257,16 +355,27 @@ const modalData = {
             role: "Work-Study Contract · Swiss Premium Negoce SA / ESPRIT",
             date: "Jan 2024 – Jun 2024",
             location: "Ghazela, Tunis",
-            image: "SPN.png",
+            images: [
+                "spn-work study/login.jpg",
+                "spn-work study/leader.jpg",
+                "spn-work study/operations.jpg",
+                "spn-work study/sales.jpg",
+                "spn-work study/marketing.jpg",
+                "spn-work study/time series.jpg",
+                "spn-work study/algo.jpg",
+                "spn-work study/deep.jpg",
+            ],
             icon: "fas fa-car",
             descriptions: [
-                "Data collection and exploration through web scraping of automotive market sources.",
-                "Development of data integration and ETL processes for cleaning and consolidating raw data.",
-                "Design and testing of Power BI dashboards for tracking luxury car pricing and market trends.",
-                "Integration of Machine Learning algorithms for predictive analysis.",
-                "Evaluation and auditing of results, followed by deployment of dashboards on a web platform.",
+                "<strong>Context:</strong> Work-study contract combining academic training at ESPRIT with applied data science missions at Swiss Premium Negoce SA — focused on data collection, BI, time series forecasting, and deep learning for the luxury automotive market.",
+                "<strong>Data Collection:</strong> Web scraping of luxury car listing platforms to collect pricing, specifications, mileage, and availability data. Data cleaning, deduplication, and exploratory data analysis (EDA) to identify key patterns.",
+                "<strong>ETL Pipeline:</strong> Design and development of data transformation processes using Talend for multi-source integration, with structured loading into a centralized MySQL data warehouse.",
+                "<strong>Dashboards:</strong> Design and deployment of four interactive dashboards (Manager, Operations, Sales, Marketing) built with GIMSI methodology and deployed via a Django + Angular web platform.",
+                "<strong>Time Series Analysis:</strong> Forecasting luxury car prices and sales volumes using statistical models (ARIMA, Prophet) — analysis of seasonality, trend decomposition, and 3-month price forecasting with confidence intervals.",
+                "<strong>Deep Learning – Computer Vision:</strong> Training and deployment of YOLO-based object detection models for automatic recognition of car license plates and vehicle model identification from images using TensorFlow and OpenCV.",
+                "<strong>Results & Deployment:</strong> Evaluation of model accuracy, performance auditing, and deployment of the complete solution on a web platform with a real-time prediction interface.",
             ],
-            tech: ["Python", "EDA", "Microsoft Power BI", "Talend", "GIMSI", "Django", "Angular", "MySQL"],
+            tech: ["Python", "EDA", "Talend", "GIMSI", "Django", "Angular", "MySQL", "TensorFlow", "OpenCV", "YOLO"],
             descLabel: "Project Details",
             techLabel: "Technologies",
         },
@@ -275,16 +384,27 @@ const modalData = {
             role: "Contrat d'Alternance · Swiss Premium Negoce SA / ESPRIT",
             date: "Jan 2024 – Juin 2024",
             location: "Ghazela, Tunis",
-            image: "SPN.png",
+            images: [
+                "spn-work study/login.jpg",
+                "spn-work study/leader.jpg",
+                "spn-work study/operations.jpg",
+                "spn-work study/sales.jpg",
+                "spn-work study/marketing.jpg",
+                "spn-work study/time series.jpg",
+                "spn-work study/algo.jpg",
+                "spn-work study/deep.jpg",
+            ],
             icon: "fas fa-car",
             descriptions: [
-                "Collecte et exploration des données par web scraping de sources du marché automobile.",
-                "Développement de processus d'intégration de données et ETL pour le nettoyage et la consolidation des données brutes.",
-                "Conception et test de tableaux de bord Power BI pour le suivi des prix et des tendances du marché automobile de luxe.",
-                "Intégration d'algorithmes de Machine Learning pour l'analyse prédictive.",
-                "Évaluation et audit des résultats, suivis du déploiement des tableaux de bord sur une plateforme web.",
+                "<strong>Contexte :</strong> Contrat d'alternance combinant une formation académique à ESPRIT avec des missions de data science appliquée chez Swiss Premium Negoce SA — axé sur la collecte de données, la BI, la prévision de séries temporelles et le deep learning pour le marché automobile de luxe.",
+                "<strong>Collecte de données :</strong> Web scraping de plateformes d'annonces de voitures de luxe pour collecter prix, spécifications, kilométrage et disponibilité. Nettoyage, dédoublonnage et analyse exploratoire (EDA) pour identifier les patterns clés.",
+                "<strong>Pipeline ETL :</strong> Conception et développement de processus de transformation de données avec Talend pour l'intégration multi-sources, avec chargement structuré dans un entrepôt de données MySQL centralisé.",
+                "<strong>Tableaux de bord :</strong> Conception et déploiement de quatre dashboards interactifs (Manager, Opérations, Ventes, Marketing) construits avec la méthodologie GIMSI et déployés via une plateforme web Django + Angular.",
+                "<strong>Time Series :</strong> Prévision des prix et volumes de ventes de voitures de luxe avec des modèles statistiques (ARIMA, Prophet) — analyse de la saisonnalité, décomposition des tendances et prévision des prix sur 3 mois avec intervalles de confiance.",
+                "<strong>Deep Learning – Vision par Ordinateur :</strong> Entraînement et déploiement de modèles de détection YOLO pour la reconnaissance automatique des matricules de véhicules et l'identification du modèle de voiture depuis des images avec TensorFlow et OpenCV.",
+                "<strong>Résultats & Déploiement :</strong> Évaluation de la précision des modèles, audit des performances et déploiement de la solution complète sur une plateforme web avec une interface de prédiction en temps réel.",
             ],
-            tech: ["Python", "EDA", "Microsoft Power BI", "Talend", "GIMSI", "Django", "Angular", "MySQL"],
+            tech: ["Python", "EDA", "Talend", "GIMSI", "Django", "Angular", "MySQL", "TensorFlow", "OpenCV", "YOLO"],
             descLabel: "Détails du Projet",
             techLabel: "Technologies",
         }
@@ -298,10 +418,12 @@ const modalData = {
             image: "ARMA.jpg",
             icon: "fas fa-chart-bar",
             descriptions: [
-                "Participation in the development of Odoo features related to human resources management and inventory tracking.",
-                "Extraction, preparation, and centralization of data from multiple sources for decision-making analysis.",
-                "Design and development of ETL pipelines with Talend for data integration, cleaning, and transformation.",
-                "Creation of interactive Power BI dashboards for monitoring commercial and operational KPIs.",
+                "<strong>Context:</strong> Part-time data engineering role at Arma Consulting, supporting internal business operations through data-driven solutions covering HR management, inventory control, and operational analytics.",
+                "<strong>Odoo Development:</strong> Participation in the development and customization of Odoo ERP modules — HR features (employee management, leave tracking, payroll workflow) and inventory management (stock movements, supplier orders, reorder rules).",
+                "<strong>Data Extraction & Preparation:</strong> Extraction of raw data from Odoo (PostgreSQL) and external sources. Data profiling, cleansing, and transformation to ensure quality and consistency for downstream analysis.",
+                "<strong>ETL Pipelines – Talend:</strong> Design and implementation of automated ETL jobs for multi-source data integration — scheduling, error handling, logging, and incremental data loading into a centralized analytical layer.",
+                "<strong>Power BI Dashboards:</strong> Development of interactive dashboards for monitoring commercial performance (sales trends, client retention, revenue targets) and operational KPIs (stock levels, supplier performance, delivery lead times).",
+                "<strong>Impact:</strong> Provided management with real-time visibility into HR costs, inventory health, and business performance — enabling faster, data-informed decision making.",
             ],
             tech: ["Odoo", "Talend", "PostgreSQL", "Microsoft Power BI", "Python"],
             descLabel: "Project Details",
@@ -315,10 +437,12 @@ const modalData = {
             image: "ARMA.jpg",
             icon: "fas fa-chart-bar",
             descriptions: [
-                "Participation au développement de fonctionnalités Odoo liées à la gestion des ressources humaines et au suivi des stocks.",
-                "Extraction, préparation et centralisation des données multi-sources pour l'analyse décisionnelle.",
-                "Conception et développement de pipelines ETL avec Talend pour l'intégration, le nettoyage et la transformation des données.",
-                "Création de tableaux de bord Power BI interactifs pour le suivi des KPIs commerciaux et opérationnels.",
+                "<strong>Contexte :</strong> Rôle d'ingénierie de données à temps partiel chez Arma Consulting, support aux opérations métier internes via des solutions orientées données couvrant la gestion RH, le contrôle des stocks et l'analytique opérationnelle.",
+                "<strong>Développement Odoo :</strong> Participation au développement et à la personnalisation des modules ERP Odoo — fonctionnalités RH (gestion des employés, suivi des congés, workflow de paie) et gestion des stocks (mouvements de stock, commandes fournisseurs, règles de réapprovisionnement).",
+                "<strong>Extraction & Préparation des données :</strong> Extraction des données brutes depuis Odoo (PostgreSQL) et sources externes. Profilage, nettoyage et transformation des données pour garantir qualité et cohérence pour les analyses en aval.",
+                "<strong>Pipelines ETL – Talend :</strong> Conception et implémentation de jobs ETL automatisés pour l'intégration multi-sources — planification, gestion des erreurs, journalisation et chargement incrémental dans une couche analytique centralisée.",
+                "<strong>Tableaux de bord Power BI :</strong> Développement de dashboards interactifs pour le suivi des performances commerciales (tendances des ventes, rétention clients, objectifs de revenus) et des KPIs opérationnels (niveaux de stock, performance fournisseurs, délais de livraison).",
+                "<strong>Impact :</strong> Fourniture à la direction d'une visibilité en temps réel sur les coûts RH, la santé des stocks et les performances métier — permettant une prise de décision plus rapide et fondée sur les données.",
             ],
             tech: ["Odoo", "Talend", "PostgreSQL", "Microsoft Power BI", "Python"],
             descLabel: "Détails du Projet",
@@ -331,15 +455,42 @@ const modalData = {
             role: "Final Year Internship · DigitalCook Tunisia",
             date: "Feb 2025 – Sept 2025",
             location: "Manar 1, Tunisia",
-            image: "digitalcook.png",
+            images: [
+                "digitalcook/page de garde.png",
+                "digitalcook/sommaire.png",
+                "digitalcook/pagelogin.png",
+                "digitalcook/adminstrateur.png",
+                "digitalcook/modifierprofile.png",
+                "digitalcook/page recruteur.png",
+                "digitalcook/password1.png",
+                "digitalcook/password3.png",
+                "digitalcook/parametrage.png",
+                "digitalcook/web1.png",
+                "digitalcook/web2.png",
+                "digitalcook/p1.png",
+                "digitalcook/p2.png",
+                "digitalcook/p3.png",
+                "digitalcook/p4.png",
+                "digitalcook/p5.png",
+                "digitalcook/p6.png",
+                "digitalcook/p7.png",
+                "digitalcook/p8.png",
+                "digitalcook/p9.png",
+                "digitalcook/p10.png",
+                "digitalcook/p12.png",
+                "digitalcook/p13.png",
+                "digitalcook/p14.png",
+                "digitalcook/p15.png",
+            ],
             icon: "fas fa-brain",
             descriptions: [
-                "Requirements gathering, system architecture design, and methodological framework based on CRISP-DM.",
-                "Design and development of ETL pipelines with Apache Airflow for automated data ingestion and transformation.",
-                "Implementation of an AI system (OpenAI API + OCR + NLP) to extract key information from CVs and match them against job offers.",
-                "Development of interactive Power BI dashboards to track recruitment KPIs and platform usage analytics.",
-                "Backend API built with FastAPI, frontend interface built with React.js, deployed via Docker.",
-                "Agile methodology (Scrum): sprint planning, daily stand-ups, retrospectives.",
+                "<strong>Context:</strong> Final year engineering internship at DigitalCook Tunisia. Mission: design and develop TalentExpo, an intelligent end-to-end recruitment platform combining data engineering, AI-powered CV analysis, and interactive dashboards — built using an Agile Scrum methodology and structured around the CRISP-DM framework.",
+                "<strong>Architecture & Data Engineering:</strong> System architecture design with a microservices approach. Development of automated ETL pipelines using Apache Airflow for scheduled data ingestion from multiple job portals, candidate databases, and internal HR sources into PostgreSQL and MongoDB stores.",
+                "<strong>AI – CV Parsing & Matching:</strong> Implementation of an intelligent CV processing engine combining OCR (for PDF/image CVs), NLP techniques (tokenization, named entity recognition, skill extraction), and the OpenAI API to automatically extract candidate profiles and compute semantic similarity scores against job offers.",
+                "<strong>Power BI Dashboards:</strong> Development of multi-page interactive dashboards tracking: candidate pipeline by stage, job offer fill rates, time-to-hire KPIs, skill gap analysis, and recruiter performance metrics — connected to live data via DirectQuery.",
+                "<strong>Full-Stack Platform:</strong> Backend REST API built with FastAPI (Python) handling authentication, user management, CV submissions, and recommendation endpoints. Frontend SPA developed with React.js offering role-based dashboards for candidates, recruiters, and administrators.",
+                "<strong>Infrastructure & DevOps:</strong> Full Dockerization of services (API, Airflow, databases) with Docker Compose. CI/CD pipeline configuration and environment management for staging and production deployments.",
+                "<strong>Agile Methodology:</strong> 2-week sprints with daily stand-ups, backlog refinement, sprint reviews, and retrospectives. Task tracking via Jira, code versioned on GitHub with pull request workflows and peer code reviews.",
             ],
             tech: ["Python", "Airflow", "Docker", "PostgreSQL", "MongoDB", "Microsoft Power BI", "React.js", "FastAPI", "OpenAI", "OCR", "NLP", "Scrum", "GitHub"],
             descLabel: "Project Details",
@@ -350,15 +501,42 @@ const modalData = {
             role: "Stage de Fin d'Études · DigitalCook Tunisia",
             date: "Fév 2025 – Sept 2025",
             location: "Manar 1, Tunisie",
-            image: "digitalcook.png",
+            images: [
+                "digitalcook/page de garde.png",
+                "digitalcook/sommaire.png",
+                "digitalcook/pagelogin.png",
+                "digitalcook/adminstrateur.png",
+                "digitalcook/modifierprofile.png",
+                "digitalcook/page recruteur.png",
+                "digitalcook/password1.png",
+                "digitalcook/password3.png",
+                "digitalcook/parametrage.png",
+                "digitalcook/web1.png",
+                "digitalcook/web2.png",
+                "digitalcook/p1.png",
+                "digitalcook/p2.png",
+                "digitalcook/p3.png",
+                "digitalcook/p4.png",
+                "digitalcook/p5.png",
+                "digitalcook/p6.png",
+                "digitalcook/p7.png",
+                "digitalcook/p8.png",
+                "digitalcook/p9.png",
+                "digitalcook/p10.png",
+                "digitalcook/p12.png",
+                "digitalcook/p13.png",
+                "digitalcook/p14.png",
+                "digitalcook/p15.png",
+            ],
             icon: "fas fa-brain",
             descriptions: [
-                "Recueil des besoins, conception de l'architecture système et cadre méthodologique basé sur CRISP-DM.",
-                "Conception et développement de pipelines ETL avec Apache Airflow pour l'ingestion et la transformation automatisées des données.",
-                "Implémentation d'un système IA (API OpenAI + OCR + NLP) pour extraire les informations clés des CVs et les matcher avec les offres d'emploi.",
-                "Développement de tableaux de bord Power BI interactifs pour le suivi des KPIs de recrutement et les analytics de la plateforme.",
-                "API backend développée avec FastAPI, interface frontend avec React.js, déployée via Docker.",
-                "Méthodologie Agile (Scrum) : planification de sprints, daily stand-ups, rétrospectives.",
+                "<strong>Contexte :</strong> Stage de fin d'études chez DigitalCook Tunisia. Mission : concevoir et développer TalentExpo, une plateforme de recrutement intelligente de bout en bout combinant ingénierie des données, analyse IA de CVs et tableaux de bord interactifs — construite avec une méthodologie Agile Scrum et structurée autour du cadre CRISP-DM.",
+                "<strong>Architecture & Ingénierie des données :</strong> Conception de l'architecture système avec une approche microservices. Développement de pipelines ETL automatisés avec Apache Airflow pour l'ingestion planifiée depuis plusieurs portails d'emploi, bases de données candidats et sources RH internes vers PostgreSQL et MongoDB.",
+                "<strong>IA – Parsing & Matching de CVs :</strong> Implémentation d'un moteur de traitement de CVs combinant OCR (pour les CVs PDF/image), des techniques NLP (tokenisation, reconnaissance d'entités nommées, extraction de compétences) et l'API OpenAI pour extraire automatiquement les profils candidats et calculer des scores de similarité sémantique avec les offres d'emploi.",
+                "<strong>Tableaux de bord Power BI :</strong> Développement de dashboards interactifs multi-pages suivant : pipeline des candidats par étape, taux de remplissage des offres, KPIs de délai d'embauche, analyse des lacunes de compétences et métriques de performance des recruteurs — connectés aux données en temps réel via DirectQuery.",
+                "<strong>Plateforme Full-Stack :</strong> API REST backend développée avec FastAPI (Python) gérant l'authentification, la gestion des utilisateurs, les soumissions de CVs et les endpoints de recommandation. SPA frontend développée avec React.js offrant des dashboards basés sur les rôles pour les candidats, recruteurs et administrateurs.",
+                "<strong>Infrastructure & DevOps :</strong> Dockerisation complète des services (API, Airflow, bases de données) avec Docker Compose. Configuration de pipeline CI/CD et gestion des environnements pour les déploiements en staging et production.",
+                "<strong>Méthodologie Agile :</strong> Sprints de 2 semaines avec daily stand-ups, affinement du backlog, revues de sprint et rétrospectives. Suivi des tâches via Jira, code versionné sur GitHub avec workflows de pull requests et revues de code entre pairs.",
             ],
             tech: ["Python", "Airflow", "Docker", "PostgreSQL", "MongoDB", "Microsoft Power BI", "React.js", "FastAPI", "OpenAI", "OCR", "NLP", "Scrum", "GitHub"],
             descLabel: "Détails du Projet",
@@ -425,14 +603,57 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── Modal logic ──────────────────────────────────────────
     const modalOverlay  = document.getElementById('modalOverlay');
     const modalCloseBtn = document.getElementById('modalCloseBtn');
+    let currentGallery = [];
+    let currentGalleryIndex = 0;
+
+    // Lightbox
+    const lightboxOverlay = document.getElementById('lightboxOverlay');
+    const lightboxImg     = document.getElementById('lightboxImg');
+
+    window.openCertLightbox = function(src) {
+        currentGallery = [src];
+        currentGalleryIndex = 0;
+        lightboxImg.src = src;
+        lightboxOverlay.classList.add('active');
+    };
+
+    window.openLightbox = function(index) {
+        if (!currentGallery.length) return;
+        currentGalleryIndex = index;
+        lightboxImg.src = currentGallery[currentGalleryIndex];
+        lightboxOverlay.classList.add('active');
+    };
+
+    function lightboxNav(dir) {
+        currentGalleryIndex = (currentGalleryIndex + dir + currentGallery.length) % currentGallery.length;
+        lightboxImg.src = currentGallery[currentGalleryIndex];
+        const thumbs = document.querySelectorAll('#galleryThumbs img');
+        if (thumbs.length) {
+            thumbs.forEach(t => t.classList.remove('active'));
+            if (thumbs[currentGalleryIndex]) thumbs[currentGalleryIndex].classList.add('active');
+            document.getElementById('galleryMain').src = currentGallery[currentGalleryIndex];
+        }
+    }
+
+    document.getElementById('lightboxClose').addEventListener('click', () => lightboxOverlay.classList.remove('active'));
+    document.getElementById('lightboxPrev').addEventListener('click', () => lightboxNav(-1));
+    document.getElementById('lightboxNext').addEventListener('click', () => lightboxNav(1));
+    lightboxOverlay.addEventListener('click', e => { if (e.target === lightboxOverlay) lightboxOverlay.classList.remove('active'); });
+    document.addEventListener('keydown', e => {
+        if (lightboxOverlay.classList.contains('active')) {
+            if (e.key === 'ArrowLeft')  lightboxNav(-1);
+            if (e.key === 'ArrowRight') lightboxNav(1);
+            if (e.key === 'Escape') lightboxOverlay.classList.remove('active');
+        }
+    });
 
     function openModal(key) {
         const data = modalData[key];
         if (!data) return;
         const d = data[currentLang] || data['en'];
 
-        document.getElementById('modalTitle').textContent    = d.title;
-        document.getElementById('modalRole').textContent     = d.role;
+        document.getElementById('modalTitle').textContent     = d.title;
+        document.getElementById('modalRole').textContent      = d.role;
         document.getElementById('modalDescLabel').textContent = d.descLabel;
         document.getElementById('modalTechLabel').textContent = d.techLabel;
 
@@ -440,16 +661,38 @@ document.addEventListener('DOMContentLoaded', () => {
             `<span><i class="far fa-calendar-alt"></i> ${d.date}</span>
              <span><i class="fas fa-map-marker-alt"></i> ${d.location}</span>`;
 
-        const list = document.getElementById('modalList');
-        list.innerHTML = d.descriptions.map(t => `<li>${t}</li>`).join('');
+        document.getElementById('modalList').innerHTML =
+            d.descriptions.map(t => `<li>${t}</li>`).join('');
 
-        const tech = document.getElementById('modalTech');
-        tech.innerHTML = d.tech.map(t => `<span>${t}</span>`).join('');
+        document.getElementById('modalTech').innerHTML =
+            d.tech.map(t => `<span>${t}</span>`).join('');
 
         const imageArea = document.getElementById('modalImageArea');
-        if (d.image) {
-            imageArea.innerHTML = `<img class="modal-image" src="${d.image}" alt="${d.title}">`;
+        if (d.images && d.images.length) {
+            currentGallery = d.images;
+            currentGalleryIndex = 0;
+            imageArea.innerHTML = `
+                <img class="modal-gallery-main" id="galleryMain" src="${d.images[0]}" alt="${d.title}">
+                <div class="modal-gallery-thumbs" id="galleryThumbs">
+                    ${d.images.map((src, i) =>
+                        `<img src="${src}" class="${i === 0 ? 'active' : ''}" data-index="${i}" alt="screenshot ${i+1}">`
+                    ).join('')}
+                </div>`;
+            document.getElementById('galleryMain').addEventListener('click', () => openLightbox(currentGalleryIndex));
+            document.querySelectorAll('#galleryThumbs img').forEach(thumb => {
+                thumb.addEventListener('click', () => {
+                    currentGalleryIndex = +thumb.getAttribute('data-index');
+                    document.getElementById('galleryMain').src = currentGallery[currentGalleryIndex];
+                    document.querySelectorAll('#galleryThumbs img').forEach(t => t.classList.remove('active'));
+                    thumb.classList.add('active');
+                });
+            });
+        } else if (d.image) {
+            currentGallery = [d.image];
+            currentGalleryIndex = 0;
+            imageArea.innerHTML = `<img class="modal-image" src="${d.image}" alt="${d.title}" style="cursor:zoom-in" onclick="openLightbox(0)">`;
         } else {
+            currentGallery = [];
             imageArea.innerHTML = `<div class="modal-image-placeholder"><i class="${d.icon}"></i></div>`;
         }
 
